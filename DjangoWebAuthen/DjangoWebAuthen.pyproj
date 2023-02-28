@@ -47,7 +47,9 @@
     <Compile Include="DjangoWebAuthen\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="main\templates\main\index.html" />
+    <Content Include="main\templates\main\base.html" />
+    <Content Include="main\templates\main\home.html" />
+    <Content Include="main\templates\registration\login.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -56,6 +58,7 @@
     <Folder Include="main\migrations\" />
     <Folder Include="main\templates\" />
     <Folder Include="main\templates\main\" />
+    <Folder Include="main\templates\registration\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">

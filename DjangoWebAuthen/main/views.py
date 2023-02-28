@@ -1,5 +1,10 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
 def home(request):
-	return "<p>Hello world</p>"
+	return render(request,"main/home.html")
+	#return HttpResponse("Hello world")
+
+def login(request):
+	return render(request,"registration/login.html")
